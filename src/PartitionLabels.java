@@ -21,13 +21,12 @@ public class PartitionLabels {
 
         int startIndex = 0, currentMax = 0;
         for(int i=0;i<S.length();i++){
-            int currentPos = maxPosition.get(S.charAt(i));
-            if(currentPos > currentMax){
+            if(maxPosition.get(S.charAt(i)) > currentMax){
                 if(i > currentMax){ //  새로운 시작.
                     anw.add(currentMax - startIndex + 1);
                     startIndex = i;
                 }
-                currentMax = currentPos;
+                currentMax = maxPosition.get(S.charAt(i));
             }
         }
         //System.out.println(startIndex +  "  : " + currentMax);
