@@ -1,8 +1,13 @@
 public class BestTimetoBuyandSellStock {
     public static void main(String[] args){
-        int[] prices = {7,6,4,3,1};
+        String test = null;
+        testObject testObject = new testObject();
+        testObject.setNum(5);
+        System.out.println(testObject.getNum().getClass());
 
-        System.out.println(maxProfit(prices));
+        //int[] prices = {7,6,4,3,1};
+
+        //System.out.println(maxProfit(prices));
     }
 
     public static int maxProfit(int[] prices){
